@@ -1,37 +1,156 @@
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 html {
-	font-size: 12px;
-	font-family: placeholder: 'Roboto', sans-serif;
-	background-color: white;
+  font-size: 10px;
+  background-color: white;
 }
 
 body {
-	width 500 px;
-	margin: 0 auto;
-	background-color: white; /*#E9E9C8;*/
-	padding: 0 20px 20px 20px;
-	border: 1px solid black;
+  width: 80%;
+  margin: 0 auto;
 }
-	
+
+
+/*
+.logo {
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px black;
+}
+
+div {
+  box-shadow: 0px 2px 0px black;
+  resize: both;
+  overflow: auto;
+}
+*/
+
+.picture {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 2px 2px 2px black;
+  /*max-height: 157px;*/
+  width: 250px;
+  /*width: auto;*/
+  height: auto;
+  transition: width 2s;
+}
+
+.picture:hover {
+  width: 300px;
+  
+}
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+  color: #2a2a2a;
+}
+
+
+p, input, li {
+  font-family: 'Roboto', sans-serif;
+  color: #2a2a2a;
+}
+
 h1 {
-	margin: 0;
-	padding: 20px 0;
-	font-size: 40px;
-	text-align: center;
-	text-shadow: 1px 1px 1px black;
+  font-size: 4rem;
+  text-align: left;
+  color: black;
+  text-shadow: 1px 1px 1px black;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 2.2rem;
 }
 
 p, li {
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0px;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 
-img {
-	display: block;
-	margin: 0 auto;
-	box-shadow: 5px 5px 5px black;
-	max-height: 500px;
-	max-width: 250px;
-	width: auto;
-	height: auto;
+/* || header layout */
+
+header {
+  margin-bottom: 10px;
+}
+
+nav, article, aside, footer {
+  background-color: white;
+  padding: 0;
+}
+
+nav {
+  height: 50px;
+  background-color: lightgray;
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 2;
+  display: flex;
+  overflow: hidden;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: gray;
+  color: white;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+} 
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: #ff80ff;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
 }
