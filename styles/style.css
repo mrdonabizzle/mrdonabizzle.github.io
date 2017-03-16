@@ -28,7 +28,19 @@ div {
   overflow: auto;
 }
 */
-
+.lbl {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: #2a2a2a;
+}
+select{
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  color: #2a2a2a;
+}
+.line {
+  border: solid black 1px;
+}
 .picture {
   display: block;
   margin: 0 auto;
