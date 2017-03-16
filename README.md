@@ -1,2 +1,2 @@
 # mrdonabizzle.github.io
-First attempt at building a web site
+This is my first attempt at building a personal web site.
