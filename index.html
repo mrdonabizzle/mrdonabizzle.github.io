@@ -34,6 +34,18 @@
     I have also dedicated some space to a few other things I am interested in.</p>
     <p>You can read more about me on the <a href="aboutme.html">About Me</a>
     page.</p>
+    
+    <label class="lbl" for="whoAmI">Please tell me a little bit about yourself.<br><br>
+      Which of the following best describes you: </label>
+      <select id="whoAmI">
+      <option value="">--Make a choice--</option>
+      <option value="employer">Employer</option>
+      <option value="student">Student</option>
+      <option value="jedi">Jedi</option>
+    </select>
+    <p class="whoAmI"></p>
+    <p class="line"></p>
+
     <p>If you would like to see some of the programs I have made in Java, check out my 
     <a href="portfolio.html">Portfolio</a> page.</p>
     <p>The <a href="otherstuff.html">Other Stuff</a> page is basically a tribute to some 
@@ -46,4 +58,25 @@
       <p>©Copyright 2017 by Will D. All rights reserved.</p>
     </footer>
   </body>
+  <script>
+    var select = document.querySelector('select');
+    var para = document.querySelector('.whoAmI');
+    
+    select.addEventListener('change', setWhoAmI);
+    
+    function setWhoAmI() {
+      var choice = select.value;
+      
+      if (choice === 'employer') {
+        para.textContent = ' Welcome to my website! Please check out my portfolio and contact me if you like what you see.';
+      } else if (choice === 'student') {
+        para.textContent = ' Welcome! Feel free to check out my portfolio and the other stuff page.';
+      } else if (choice === 'jedi') {
+        para.textContent = ' Welcome! May the force be with you.';
+      } else {
+        para.textContent = '';
+      }
+    } 
+    
+  </script>
 </html>
